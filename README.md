@@ -15,6 +15,7 @@ The process has been greatly simplified to ensure ease of use:
 2. Choose to install the required pip packages.
 3. Convert the `.py` script to an executable.
 4. Set the program to run automatically at startup, or remove it from startup if desired.
+5. For Close Press `ctrl+alt+q`
 
 ## Important Note on Antivirus Detection
 
