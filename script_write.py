@@ -1,8 +1,16 @@
 import keyboard
+import time
 
 def send_backtick():
     keyboard.write("`")
 
-keyboard.add_hotkey('ctrl+shift', send_backtick)
+def quit_program():
+    global running
+    running = False
 
-keyboard.wait('esc')
+keyboard.add_hotkey('ctrl+shift', send_backtick)
+keyboard.add_hotkey('ctrl+alt+q', quit_program)
+
+running = True
+while running:
+    time.sleep(1)
